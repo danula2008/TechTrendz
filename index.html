@@ -17,7 +17,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
         <div class="container-fluid">
             <div class="col row">
                 <div class="d-flex ms-lg-5 ms-lg-2">
@@ -152,8 +152,142 @@
 
     <h3 class="container mt-5">Just For You</h3>
 
+    <style>
+        .card {
+            transition: all 0.3s ease-in-out;
+            border-radius: 5%;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .card:hover::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: -1;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
     <div class="container">
-        
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/earpods2.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">EchoFlow Wireless Earbuds.</p>
+                        <h4 class="text-primary">Rs. 1050</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/earphones_c_1.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">PulseSync Bluetooth Headphones.</p>
+                        <h4 class="text-primary">Rs. 920</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/earpods1.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">VibeSync Wireless Earbuds.</p>
+                        <h4 class="text-primary">Rs. 1370</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/headphones_a_1.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">ZenithSound Wireless Headphones.</p>
+                        <h4 class="text-primary">Rs. 2300</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/speaker1.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">HarmonySound Bluetooth Speakers.</p>
+                        <h4 class="text-primary">Rs. 3500</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/earpods4.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">SyncSound Wired Earphones.</p>
+                        <h4 class="text-primary">Rs. 1500</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/headphones_c_4.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">EchoFlow Wireless Earbuds.</p>
+                        <h4 class="text-primary">Rs. 1050</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/earpods3.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">PulseSync Bluetooth Headphones.</p>
+                        <h4 class="text-primary">Rs. 920</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/watch_3.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">VibeSync Wireless Earbuds.</p>
+                        <h4 class="text-primary">Rs. 1370</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/speaker4.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">ZenithSound Wireless Headphones.</p>
+                        <h4 class="text-primary">Rs. 2300</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/watch_2.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">HarmonySound Bluetooth Speakers.</p>
+                        <h4 class="text-primary">Rs. 3500</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-4 my-2">
+                <div class="card">
+                    <img src="assets/Products/earphones_c_2.webp" class="card-img-top" alt="product">
+                    <div class="card-body">
+                        <p class="card-text">SyncSound Wired Earphones.</p>
+                        <h4 class="text-primary">Rs. 1500</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
